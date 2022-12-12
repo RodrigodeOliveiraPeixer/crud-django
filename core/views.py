@@ -5,7 +5,7 @@ from .models import Pessoa
 
 def home(request):
     pessoas = Pessoa.objects.all()
-    return render(request, "index.html", {"pessoas": pessoas}
+    return render(request, "index.html", {"pessoas": pessoas})
 
 def salvar(request):
     vnome = request.POST.get("nome")
