@@ -15,7 +15,7 @@ def salvar(request):
 
 def editar(request, id):
     pessoa = Pessoa.objects.get(id=id)
-    return render(request, "update.html", {"pessoa": pessoa}
+    return render(request, "update.html", {"pessoa": pessoa})
 
 def update(request, id):
     vnome = request.POST.get("nome")
