@@ -25,7 +25,7 @@ def update(request, id):
     return redirect(home)
 
 def delete(request, id):
-    pessoa = Pessoa.objects.get(id=id
+    pessoa = Pessoa.objects.get(id=id)
     pessoa.delete()
     return redirect(home)
 
