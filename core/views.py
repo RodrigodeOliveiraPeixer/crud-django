@@ -11,7 +11,7 @@ def salvar(request):
     vnome = request.POST.get("nome")
     Pessoa.objects.create(nome=vnome)
     pessoas = Pessoa.objects.all()
-    return render(request, "index.html", {"pessoas": pessoas}
+    return render(request, "index.html", {"pessoas": pessoas})
 
 def editar(request, id):
     pessoa = Pessoa.objects.get(id=id)
